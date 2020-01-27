@@ -1,0 +1,34 @@
+{
+  "name": "wizened-mosaic",
+  "version": "1.0.0",
+  "description": "Design patterns in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oyekunle-Mark/wizened-mosaic.git"
+  },
+  "keywords": [
+    "design",
+    "patterns",
+    "typescript"
+  ],
+  "author": "Oyekunle Oloyede",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oyekunle-Mark/wizened-mosaic/issues"
+  },
+  "homepage": "https://github.com/Oyekunle-Mark/wizened-mosaic#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
