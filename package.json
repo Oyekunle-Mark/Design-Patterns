@@ -23,7 +23,6 @@
   "homepage": "https://github.com/Oyekunle-Mark/wizened-mosaic#readme",
   "dependencies": {
     "ts-node": "^8.6.2",
-    "tslint": "^6.0.0",
     "typescript": "^3.7.5"
   }
 }
