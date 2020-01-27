@@ -19,6 +19,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "indent": "off"
+        "indent": "off",
+        "max-classes-per-file": "off",
+        "class-methods-use-this": "off"
     }
 }
