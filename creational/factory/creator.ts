@@ -1,6 +1,6 @@
-import Product from './product';
+import { Product } from './product';
 
-export default abstract class Creator {
+export abstract class Creator {
     public abstract factoryMethod(): Product;
 
     public someOperation(): String {

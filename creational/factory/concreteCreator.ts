@@ -1,5 +1,5 @@
-import Product from './product';
-import Creator from './creator';
+import { Product } from './product';
+import { Creator } from './creator';
 import { ConcreteProduct1, ConcreteProduct2 } from './concreteProduct';
 
 export class ConcreteCreator1 extends Creator {

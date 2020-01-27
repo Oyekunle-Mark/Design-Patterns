@@ -1,4 +1,4 @@
-import Product from './product';
+import { Product } from './product';
 
 export class ConcreteProduct1 implements Product {
     public operation(): string {

@@ -1,4 +1,4 @@
-import Creator from './creator';
+import { Creator } from './creator';
 import { ConcreteCreator1, ConcreteCreator2 } from './concreteCreator';
 
 function clientCode(creator: Creator) {
