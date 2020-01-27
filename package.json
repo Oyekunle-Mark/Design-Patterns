@@ -23,10 +23,12 @@
   "homepage": "https://github.com/Oyekunle-Mark/wizened-mosaic#readme",
   "dependencies": {},
   "devDependencies": {
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5",
     "@typescript-eslint/eslint-plugin": "^2.17.0",
     "@typescript-eslint/parser": "^2.17.0",
-    "eslint": "^6.8.0"
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
   }
 }
