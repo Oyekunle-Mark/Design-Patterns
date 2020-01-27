@@ -1,7 +1,7 @@
 import { Creator } from './creator';
 import { ConcreteCreator1, ConcreteCreator2 } from './concreteCreator';
 
-function clientCode(creator: Creator) {
+function clientCode(creator: Creator): void {
     console.log(creator.someOperation());
 }
 
