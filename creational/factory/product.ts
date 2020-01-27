@@ -1,3 +1,3 @@
-export interface Product {
+export default interface Product {
     operation(): string;
 }
