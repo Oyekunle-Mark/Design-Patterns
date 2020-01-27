@@ -1,8 +1,6 @@
-export interface AbstractProductA {
-    useFulFunctionA(): string;
-}
+import { AbstractProductA, AbstractProductB } from './products';
 
-export interface AbstractProductB {
-    useFulFunctionB(): string;
-    anotherUseFulFunctionB(collaborator: AbstractProductA): string;
+export interface AbstractFactory {
+    createProductA(): AbstractProductA;
+    createProductB(): AbstractProductB;
 }
