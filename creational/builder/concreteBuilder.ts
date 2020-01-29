@@ -5,7 +5,7 @@ export class ConcreteBuilder1 implements Builder {
     private product: Product1;
 
     constructor() {
-        this.product = new Product1();
+        this.reset();
     }
 
     public reset(): void {
