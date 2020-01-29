@@ -5,7 +5,7 @@ export class ConcreteBuilder1 implements Builder {
     private product: Product1;
 
     constructor() {
-        this.reset();
+        this.product = new Product1();
     }
 
     public reset(): void {
@@ -22,5 +22,12 @@ export class ConcreteBuilder1 implements Builder {
 
     public producePartC(): void {
         this.product.parts.push('Part C1');
+    }
+
+
+    public getProduct(): Product1 {
+        const result = this.product;
+        this.reset();
+        return result;
     }
 }
