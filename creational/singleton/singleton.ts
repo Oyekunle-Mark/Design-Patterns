@@ -1,6 +1,7 @@
 export class Singleton {
     private static instance: Singleton;
 
+    // eslint-disable-next-line no-useless-constructor
     private constructor() { }
 
     public static getInstance(): Singleton {
@@ -11,7 +12,6 @@ export class Singleton {
         return Singleton.instance;
     }
 
-    public someBusinessLogic(): void {
-        // ...
-    }
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
+    public someBusinessLogic(): void { }
 }
