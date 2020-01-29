@@ -1,3 +1,5 @@
+import { ComponentWithBackReference } from './componentWithBackReference';
+
 export class Prototype {
     public primitive: any;
     public component: object;
