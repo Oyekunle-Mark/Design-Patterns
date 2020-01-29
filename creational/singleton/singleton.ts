@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 export class Singleton {
     private static instance: Singleton;
 
@@ -12,6 +13,5 @@ export class Singleton {
         return Singleton.instance;
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-empty-function
     public someBusinessLogic(): void { }
 }
