@@ -6,6 +6,9 @@ export class Prototype {
     public component: object;
     public circularReference: ComponentWithBackReference;
 
+    /**
+     * Clone will create a deep copy of Prototype
+     */
     public clone(): this {
         const clone = Object.create(this);
         clone.component = Object.create(this.component);
