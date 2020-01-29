@@ -1,6 +1,7 @@
 import { ComponentWithBackReference } from './componentWithBackReference';
 
 export class Prototype {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     public primitive: any;
     public component: object;
     public circularReference: ComponentWithBackReference;
