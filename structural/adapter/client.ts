@@ -3,7 +3,7 @@ import { Adapter } from './adapter';
 import { Target } from './target';
 
 function clientCode(target: Target): void {
-    target.request();
+    console.log(target.request());
 }
 
 console.log('Client: I can work just fine with the Target objects:');
