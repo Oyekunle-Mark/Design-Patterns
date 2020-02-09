@@ -5,3 +5,13 @@ import { ConcreteImplementationA, ConcreteImplementationB } from './concreteImpl
 function clientCode(abstraction: Abstraction): void {
     console.log(abstraction.operation());
 }
+
+let implementation = new ConcreteImplementationA();
+let abstraction = new Abstraction(implementation);
+clientCode(abstraction);
+
+console.log('');
+
+implementation = new ConcreteImplementationB();
+abstraction = new ExtendedAbstraction(implementation);
+clientCode(abstraction);
