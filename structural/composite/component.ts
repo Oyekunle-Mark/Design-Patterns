@@ -9,9 +9,13 @@ export abstract class Component {
         return this.parent;
     }
 
-    public add(component: Component): void { }
+    public add(component: Component): void {
+        // ...
+    }
 
-    public remove(component: Component): void { }
+    public remove(component: Component): void {
+        // ...
+    }
 
     public isComposite(): boolean {
         return false;
