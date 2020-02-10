@@ -1,11 +1,13 @@
-export abstract class Component {
-    protected parent: Component;
+type Parent = Component | null;
 
-    public setParent(component: Component): void {
+export abstract class Component {
+    protected parent: Parent;
+
+    public setParent(component: Parent): void {
         this.parent = component;
     }
 
-    public getParent(): Component {
+    public getParent(): Parent {
         return this.parent;
     }
 
