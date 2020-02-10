@@ -22,6 +22,7 @@ export class Composite extends Component {
     public operation(): string {
         const results = [];
 
+        // eslint-disable-next-line no-restricted-syntax
         for (const child of this.children) {
             results.push(child.operation());
         }
