@@ -9,10 +9,12 @@ export abstract class Component {
         return this.parent;
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     public add(component: Component): void {
         // ...
     }
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     public remove(component: Component): void {
         // ...
     }
