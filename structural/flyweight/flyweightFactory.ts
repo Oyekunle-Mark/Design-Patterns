@@ -28,4 +28,14 @@ export class FlyweightFactory {
 
         return this.flyweights[key];
     }
+
+    public listFlyweights(): void {
+        const count = Object.keys(this.flyweights).length;
+        console.log(`\nFlyweightFactory: I have ${count} flyweights:`);
+
+        // eslint-disable-next-line guard-for-in
+        for (const key in this.flyweights) {
+            console.log(key);
+        }
+    }
 }
