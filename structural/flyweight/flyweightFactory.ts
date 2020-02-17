@@ -1,8 +1,10 @@
 /* eslint-disable no-restricted-syntax */
 import { Flyweight } from './flyweight';
 
+type flyweightSharedStates = { [key: string]: Flyweight };
+
 export class FlyweightFactory {
-    private flyweights: { [key: string]: Flyweight } = {};
+    private flyweights: flyweightSharedStates = {};
 
     constructor(initialFlyweights: string[][]) {
         for (const state of initialFlyweights) {
