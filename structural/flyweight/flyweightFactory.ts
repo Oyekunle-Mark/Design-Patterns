@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-syntax */
 import { Flyweight } from './flyweight';
 
 export class FlyweightFactory {
