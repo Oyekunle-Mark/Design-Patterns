@@ -10,3 +10,18 @@ const factory = new FlyweightFactory([
 ]);
 
 factory.listFlyweights();
+
+function addCarToPoliceDatabase(
+    ff: FlyweightFactory, plates: string, owner: string,
+    brand: string, model: string, color: string,
+): void {
+    console.log('\nClient: Adding a car to database.');
+    const flyweight = ff.getFlyweight([brand, model, color]);
+
+    flyweight.operation([plates, owner]);
+}
+
+addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'M5', 'red');
+addCarToPoliceDatabase(factory, 'CL234IR', 'James Doe', 'BMW', 'X1', 'red');
+
+factory.listFlyweights();
