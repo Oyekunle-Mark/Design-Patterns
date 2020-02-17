@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export class Flyweight {
     constructor(private sharedState: any) { }
 
