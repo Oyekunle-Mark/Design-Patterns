@@ -17,4 +17,18 @@ class Invoker {
     private isCommand(command: Command): boolean {
         return command.execute !== undefined;
     }
+
+    public doSomethingImportant(): void {
+        console.log('Invoker: Does anybody want something done before I begin?');
+        if (this.isCommand(this.onStart)) {
+            this.onStart.execute();
+        }
+
+        console.log('Invoker: ...doing something really important...');
+
+        console.log('Invoker: Does anybody want something done after I finish?');
+        if (this.isCommand(this.onFinish)) {
+            this.onFinish.execute();
+        }
+    }
 }
