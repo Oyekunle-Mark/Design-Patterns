@@ -1,6 +1,7 @@
 import { Command } from './command';
 import { SimpleCommand } from './simpleCommand';
 import { ComplexCommand } from './complexCommand';
+import { Receiver } from './receiver';
 
 class Invoker {
     private onStart: Command;
@@ -32,3 +33,10 @@ class Invoker {
         }
     }
 }
+
+const invoker = new Invoker();
+invoker.setOnStart(new SimpleCommand('Say Hi!'));
+const receiver = new Receiver();
+invoker.setOnFinish(new ComplexCommand(receiver, 'Send email', 'Save report'));
+
+invoker.doSomethingImportant();
