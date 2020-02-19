@@ -13,4 +13,8 @@ class Invoker {
     public setOnFinish(command: Command): void {
         this.onFinish = command;
     }
+
+    private isCommand(command: Command): boolean {
+        return command.execute !== undefined;
+    }
 }
