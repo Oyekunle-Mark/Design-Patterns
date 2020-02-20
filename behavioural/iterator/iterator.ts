@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface Iterator<T> {
-    current(): any;
+    current(): T;
     next(): T;
     key(): number;
     valid(): boolean;
