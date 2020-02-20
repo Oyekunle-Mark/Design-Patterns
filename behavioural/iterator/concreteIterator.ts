@@ -31,7 +31,7 @@ export class AlphabeticalOrderIterator implements Iterator<string> {
 
     public valid(): boolean {
         if (this.reverse) {
-            return this.position > 0;
+            return this.position >= 0;
         }
 
         return this.position < this.collection.getCount();
