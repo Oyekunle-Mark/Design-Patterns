@@ -14,7 +14,7 @@ export class AlphabeticalOrderIterator implements Iterator<string> {
         this.position = this.reverse ? this.collection.getCount() - 1 : 0;
     }
 
-    public current(): any {
+    public current(): string {
         return this.collection.getItems()[this.position];
     }
 
@@ -22,7 +22,7 @@ export class AlphabeticalOrderIterator implements Iterator<string> {
         return this.position;
     }
 
-    public next(): any {
+    public next(): string {
         const item = this.collection.getItems()[this.position];
         this.position += this.reverse ? -1 : 1;
 
