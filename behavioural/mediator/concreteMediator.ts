@@ -2,7 +2,10 @@ import { Mediator } from './mediator';
 import { Component1, Component2 } from './components';
 
 export class ConcreteMediator implements Mediator {
-    constructor(private component1: Component1, private component2: Component2) { }
+    constructor(private component1: Component1, private component2: Component2) {
+        component1.setMediator(this);
+        component2.setMediator(this);
+    }
 
     public notify(sender: object, event: string): void {
         if (event === 'A') {
