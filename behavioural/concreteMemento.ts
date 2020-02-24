@@ -1,6 +1,6 @@
-import { Momento } from './memento';
+import { Memento } from './memento';
 
-export class ConcreteMomento implements Momento {
+export class ConcreteMemento implements Memento {
     private date: string;
 
     constructor(private state: string) {
