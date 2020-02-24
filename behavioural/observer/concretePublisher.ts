@@ -15,4 +15,13 @@ export class ConcretePublisher implements Publisher {
         this.subscribers.slice(subscriberIndex, 1);
         console.log('Subject: Detached an observer.');
     }
+
+    public notify(): void {
+        console.log('Subject: Notifying observers...');
+
+        // eslint-disable-next-line no-restricted-syntax
+        for (const subscriber of this.subscribers) {
+            subscriber.update(this);
+        }
+    }
 }
