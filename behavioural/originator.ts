@@ -1,5 +1,5 @@
 import { Memento } from './memento';
-import { ConcreteMomento } from './concreteMomento';
+import { ConcreteMomento } from './concreteMemento';
 
 export class Originator {
     constructor(private state: string) {
