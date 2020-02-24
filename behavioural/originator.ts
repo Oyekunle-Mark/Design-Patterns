@@ -1,5 +1,5 @@
 import { Memento } from './memento';
-import { ConcreteMomento } from './concreteMemento';
+import { ConcreteMemento } from './concreteMemento';
 
 export class Originator {
     constructor(private state: string) {
@@ -16,7 +16,7 @@ export class Originator {
     }
 
     public save(): Memento {
-        return new ConcreteMomento(this.state);
+        return new ConcreteMemento(this.state);
     }
 
     public restore(momento: Memento): void {
