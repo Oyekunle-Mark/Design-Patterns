@@ -1,4 +1,4 @@
-import { Momento } from './memento';
+import { Memento } from './memento';
 import { ConcreteMomento } from './concreteMomento';
 
 export class Originator {
@@ -15,11 +15,11 @@ export class Originator {
             .join('');
     }
 
-    public save(): Momento {
+    public save(): Memento {
         return new ConcreteMomento(this.state);
     }
 
-    public restore(momento: Momento): void {
+    public restore(momento: Memento): void {
         this.state = momento.getState();
         console.log(`Originator: My state has changed to: ${this.state}`);
     }
