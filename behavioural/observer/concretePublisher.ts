@@ -24,4 +24,12 @@ export class ConcretePublisher implements Publisher {
             subscriber.update(this);
         }
     }
+
+    public someBusinessLogic(): void {
+        console.log('\nSubject: I\'m doing something important.');
+        this.state = Math.floor(Math.random() * (10 + 1));
+
+        console.log(`Subject: My state has just changed to: ${this.state}`);
+        this.notify();
+    }
 }
