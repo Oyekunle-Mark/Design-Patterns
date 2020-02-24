@@ -1,3 +1,5 @@
+import { Publisher } from './publisher';
+
 export interface Subscriber {
-    update(subject: Subject): void;
+    update(publisher: Publisher): void;
 }
