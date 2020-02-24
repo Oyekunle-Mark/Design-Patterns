@@ -1,4 +1,5 @@
 import { Momento } from './momento';
+import { ConcreteMomento } from './concreteMomento';
 
 export class Originator {
     constructor(private state: string) {
@@ -12,5 +13,14 @@ export class Originator {
             .fill(' ')
             .map(() => charSet.charAt(Math.floor(Math.random() * charSet.length)))
             .join('');
+    }
+
+    public save(): Momento {
+        return new ConcreteMomento(this.state);
+    }
+
+    public restore(momento: Momento): void {
+        this.state = memento.getState();
+        console.log(`Originator: My state has changed to: ${this.state}`);
     }
 }
