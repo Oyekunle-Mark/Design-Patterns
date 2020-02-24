@@ -9,7 +9,7 @@ export class Originator {
     private generateRandomString(length = 10): string {
         const charSet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-        return Array(5)
+        return Array(length)
             .fill(' ')
             .map(() => charSet.charAt(Math.floor(Math.random() * charSet.length)))
             .join('');
@@ -20,7 +20,7 @@ export class Originator {
     }
 
     public restore(momento: Momento): void {
-        this.state = memento.getState();
+        this.state = momento.getState();
         console.log(`Originator: My state has changed to: ${this.state}`);
     }
 }
