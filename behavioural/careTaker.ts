@@ -24,7 +24,7 @@ export class CareTaker {
     public showHistory(): void {
         console.log('Caretaker: Here\'s the list of mementos:');
 
-        
+        // eslint-disable-next-line no-restricted-syntax
         for (const momento of this.momentos) {
             console.log(momento.getName());
         }
