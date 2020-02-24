@@ -1,8 +1,8 @@
-import { Momento } from './memento';
+import { Memento } from './memento';
 import { Originator } from './originator';
 
 export class CareTaker {
-    private memento: Momento[] = [];
+    private memento: Memento[] = [];
 
     constructor(private originator: Originator) { }
 
