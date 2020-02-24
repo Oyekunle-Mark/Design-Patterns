@@ -1,4 +1,4 @@
-import { Momento } from './momento';
+import { Momento } from './memento';
 import { ConcreteMomento } from './concreteMomento';
 
 export class Originator {

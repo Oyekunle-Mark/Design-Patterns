@@ -1,4 +1,4 @@
-import { Momento } from './momento';
+import { Momento } from './memento';
 import { Originator } from './originator';
 
 export class CareTaker {

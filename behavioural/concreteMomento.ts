@@ -1,4 +1,4 @@
-import { Momento } from './momento';
+import { Momento } from './memento';
 
 export class ConcreteMomento implements Momento {
     private date: string;
