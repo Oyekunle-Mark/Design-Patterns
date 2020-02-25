@@ -1,7 +1,7 @@
 import { Context } from './context';
 
 export abstract class State {
-    private context: Context;
+    protected context: Context;
 
     public setContext(context: Context): void {
         this.context = context;
