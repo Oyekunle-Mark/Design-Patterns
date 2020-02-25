@@ -1,3 +1,5 @@
+import { Context } from './context';
+
 export abstract class State {
     private context: Context;
 
