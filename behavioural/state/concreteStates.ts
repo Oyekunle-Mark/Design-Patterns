@@ -4,6 +4,7 @@ export class ConcreteStateA extends State {
     public handle1(): void {
         console.log('ConcreteStateA handles request1.');
         console.log('ConcreteStateA wants to change the state of the context.');
+        // eslint-disable-next-line @typescript-eslint/no-use-before-define
         this.context.transitionTo(new ConcreteStateB());
     }
 
