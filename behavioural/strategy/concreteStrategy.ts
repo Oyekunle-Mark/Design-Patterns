@@ -5,3 +5,9 @@ export class ConcreteStrategyA implements Strategy {
         return data.sort();
     }
 }
+
+export class ConcreteStrategyB implements Strategy {
+    public doAlgorithm(data: string[]): string[] {
+        return data.reverse();
+    }
+}
