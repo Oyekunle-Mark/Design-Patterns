@@ -10,3 +10,13 @@ export class ConcreteComponentA implements Component {
         return 'A';
     }
 }
+
+export class ConcreteComponentB implements Component {
+    public accept(visitor: Visitor): void {
+        visitor.visitConcreteComponentB(this);
+    }
+
+    public specialMethodOfConcreteComponentB(): string {
+        return 'B';
+    }
+}
