@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 export abstract class AbstractClass {
     public templateMethod(): void {
         this.baseOperation1();
