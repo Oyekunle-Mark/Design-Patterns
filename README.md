@@ -1,4 +1,4 @@
-# wizened-mosaic
+# Design Patterns
 
 Popular design patterns in Typescript.
 
