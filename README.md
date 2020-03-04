@@ -1,4 +1,4 @@
-# Design Patterns
+# Design Patterns in TypeScript
 
 Popular design patterns in Typescript.
 
